@@ -29,18 +29,33 @@ export function Portfolio({}: PortfolioProps) {
       >
         <SideNavbar toggleMenuVisibility={toggleMenuVisibility} />
       </div>
+
+      {/* Profile Info */}
       <Element
         className="relative flex flex-col min-h-screen pb-4 bg-tertiary"
         name="profile-info"
+        data-testid="profile-info"
       >
         <Navbar toggleMenuVisibility={toggleMenuVisibility} />
-        <Profile className="flex flex-1 " />
+        <Profile className="flex flex-1 " id="profile-info" />
       </Element>
-      <Element className="bg-white h-fit" name="projects">
-        <Projects />
+
+      {/* Projects */}
+      <Element
+        className="bg-white h-fit"
+        name="projects"
+        data-testid="projects"
+      >
+        <Projects id="projects" />
       </Element>
-      <Element className="h-screen max-h-fit bg-s" name="contact-me">
-        <ContactMe />
+
+      {/* Contact Infos */}
+      <Element
+        className="h-screen max-h-fit bg-s"
+        name="contact-me"
+        data-testid="contact-me"
+      >
+        <ContactMe id="contact-me" />
       </Element>
     </div>
   );

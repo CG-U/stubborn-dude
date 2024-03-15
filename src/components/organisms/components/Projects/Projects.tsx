@@ -13,13 +13,13 @@ export function Projects({ ...props }: ProjectsProps) {
     {
       title: "Learners",
       description:
-        "I built the the rehauled version of the LMS which is the main product of Cast, I mainly did the front end of this web applications.",
+        "I built the the rehauled version of the LMS which is the main product of a start up company, I mainly did the front end of this web applications.",
       picture: gbfScreenShot,
     },
     {
       title: "Courses",
       description:
-        "One of the crucial features that i have developed on learners is the courses, where most of the users spend their time on in learning what the client has to offer.",
+        "One of the crucial features that i have developed on the LMS is the course viewing page, where most of the users spend their time on in learning what the client has to offer.",
       picture: coursesScreenShot,
     },
   ];
@@ -35,10 +35,10 @@ export function Projects({ ...props }: ProjectsProps) {
         frontend applications. Here's some of what I've done on my working
         years!
       </p>
-      <div className="grid flex-1 grid-cols-1 gap-10 my-auto md:px-5 md:grid-cols-2">
+      <div className="grid flex-1 grid-cols-1 gap-10 my-auto md:px-5 md:grid-cols-2 ">
         {workCards.map((card) => {
           return (
-            <div className="flex flex-col items-center w-full p-4 my-auto space-y-4 bg-gray-200 rounded-lg h-fit drop-shadow">
+            <div className="flex flex-col items-center w-full h-full p-4 my-auto space-y-4 bg-gray-200 rounded-lg drop-shadow">
               <h1 className="font-bold">{card.title}</h1>
               <img
                 src={card.picture}

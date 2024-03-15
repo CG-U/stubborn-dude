@@ -22,15 +22,21 @@ export function Profile({ ...props }: ProfileProps) {
   }[] = [
     {
       cardDescription:
-        "I'm a passionate web developer who is always looking for new challenges and opportunities to learn and grow.",
+        "I'm a passionate web developer who is always looking for new challenges and opportunities to learn and grow. ",
       cardGreeting: "Hi there, I'm Ced!",
       cardHeader: "Frontend Web Developer",
     },
     {
       cardDescription:
-        "I mainly use react and typescript on my job. To tell you further here are the tech im familiar with.",
+        "I live in San Pedro Laguna, a very outgoing person who loves to exercise on their free time. My hobbies were typical i guess... ",
+      cardGreeting: "More about me! ",
+      cardHeader: "",
+    },
+    {
+      cardDescription:
+        "I mainly use react and typescript on my job. To tell you further,  here are the tech im familiar with.",
       cardGreeting: "I love tech! ",
-      cardHeader: "Tech I love!",
+      cardHeader: "I'm enthusiastic about new technologies!",
     },
   ];
   const isLastCard = cardToDisplayIndex + 1 === cards.length;
@@ -77,10 +83,10 @@ export function Profile({ ...props }: ProfileProps) {
               </h1>
               <h2 className="">{card.cardHeader}</h2>
               <p className="text-lg text-primary">{card.cardDescription}</p>
-              {index === 1 && (
+              {isLastCard && (
                 <div className="flex space-x-2">
                   {techILoveIcons.map((iconSrc) => (
-                    <img src={iconSrc} className="w-8 h-8" />
+                    <img src={iconSrc} alt="tech icon" className="w-8 h-8" />
                   ))}
                 </div>
               )}
@@ -89,12 +95,10 @@ export function Profile({ ...props }: ProfileProps) {
         })}
       </section>
       <div
-        id="carousel"
-        className="mx-auto my-4 border-4 border-white w-fit rounded-2xl md:my-auto max-w-[40%] md:max-w-[30%]"
+        id="image container"
+        className="mx-auto my-4 border-4 border-white w-fit rounded-2xl md:my-auto max-w-[40%] md:max-w-[30%] hover:rotate-3 duration-200"
       >
         <img src={profilePicture} alt="Profile" className="rounded-xl" />
-        {/* <img src={profilePicture} alt="Profile" className="rounded-2xl h-80 " />
-        <img src={profilePicture} alt="Profile" className="rounded-2xl h-80 " /> */}
       </div>
     </div>
   );
