@@ -42,7 +42,7 @@ export function Portfolio({}: PortfolioProps) {
 
       {/* Projects */}
       <Element
-        className="bg-white h-fit"
+        className="bg-white min-h-fit"
         name="projects"
         data-testid="projects"
       >
@@ -51,7 +51,7 @@ export function Portfolio({}: PortfolioProps) {
 
       {/* Contact Infos */}
       <Element
-        className="h-screen max-h-fit bg-s"
+        className="h-fit bg-s"
         name="contact-me"
         data-testid="contact-me"
       >

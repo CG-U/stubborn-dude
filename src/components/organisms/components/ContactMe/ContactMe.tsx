@@ -16,7 +16,7 @@ export function ContactMe({ ...props }: ContactMeProps) {
       </p>
       <section
         id="email-section"
-        className="flex flex-col justify-center flex-1 bg-white-"
+        className="flex flex-col justify-center flex-1 h-full mt-8"
       >
         <div className="flex items-center mb-8 space-x-4">
           <img src={gmailIcon} alt="gmail icon" />
