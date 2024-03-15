@@ -22,7 +22,7 @@ export function Button({ variety, text, ...props }: ButtonProps) {
       <div
         className={`${
           isHovered ? "w-full" : "w-0"
-        } h-1 bg-tertiary duration-500 absolute bottom-0  `}
+        } h-1 bg-tertiary duration-500 absolute bottom-0`}
       ></div>
     </button>
   );
