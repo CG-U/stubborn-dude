@@ -18,40 +18,40 @@ export function ContactMe({ ...props }: ContactMeProps) {
         id="email-section"
         className="flex flex-col justify-center flex-1 bg-white-"
       >
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center mb-8 space-x-4">
           <img src={gmailIcon} alt="gmail icon" />
           <a
             href="mailto:cguntalan1999@gmail.com"
-            className="text-xl text-blue-500"
+            className="text-xl text-blue-500 "
             target="_blank"
             rel="noReferrer"
           >
             cguntalan1999@gmail.com
           </a>
         </div>
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center mb-8 space-x-4">
           <img src={gitIcon} alt="gmail icon" />
           <a
             href="https://github.com/CG-U"
-            className="text-xl text-blue-500"
+            className="text-xl text-blue-500 "
             target="_blank"
             rel="noReferrer"
           >
             https://github.com/CG-U
           </a>
         </div>
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center mb-8 space-x-4">
           <img src={linkedInIcon} alt="gmail icon" />
           <a
             href="https://www.linkedin.com/in/cedrick-godwin-untalan-02012a21a/"
-            className="text-xl text-blue-500"
+            className="text-xl text-blue-500 "
             target="_blank"
             rel="noReferrer"
           >
             https://www.linkedin.com/in/cedrick-godwin-untalan-02012a21a/
           </a>
         </div>
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center mb-8 space-x-4">
           <Icon iconName="phone" className="text-5xl"></Icon>
           <p className="text-xl ">0920-972-8001</p>
         </div>
